@@ -21,7 +21,7 @@ import AdminForgotPassword from "./pages/Adminpage/ForgotPassword";
 import AdminVerifyForgot from "./pages/Adminpage/VerifyForgot";
 import ProductDashboard from "./pages/Adminpage/ProductDashboard";
 import AdminOrdersPage from "./pages/Adminpage/Adminorderpage";
-import Totalorder from "./pages/Adminpage/totalorder";
+import Totalorder from "./pages/Adminpage/Totalorder";
 import AdminSupportPage from "./pages/Adminpage/AdminSupportPage";
 import AdminDashboard from "./pages/Adminpage/AdminDashboard";
 
