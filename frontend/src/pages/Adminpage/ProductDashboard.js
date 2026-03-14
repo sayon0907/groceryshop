@@ -96,12 +96,12 @@ export default function ProductDashboard() {
     e.preventDefault();
     try {
       if (editingId) {
-        await axios.put(`http://localhost:5000/api/admin/products/${editingId}`, form, {
+        await axios.put(`https://groceryshop-d27s.onrender.com/api/admin/products/${editingId}`, form, {
           headers: { Authorization: `Bearer ${token}` },
         });
         toast.success("Product updated successfully");
       } else {
-        await axios.post("http://localhost:5000/api/admin/products", form, {
+        await axios.post("https://groceryshop-d27s.onrender.com/api/admin/products", form, {
           headers: { Authorization: `Bearer ${token}` },
         });
         toast.success("Product added successfully");
@@ -131,7 +131,7 @@ export default function ProductDashboard() {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure to delete?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/admin/products/${id}`, {
+      await axios.delete(`https://groceryshop-d27s.onrender.com/api/admin/products/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       toast.success("Product deleted");
